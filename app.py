@@ -23,8 +23,8 @@ def maint():
 
   args=request.args
   html=args.get("url")
-  htmlz=requests.get(html).content
-  topred=htmlz
+  htmlz=requests.get(html)
+  topred=htmlz.json()
 
 
 
