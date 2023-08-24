@@ -23,7 +23,7 @@ def maint():
 
   args=request.args
   html=args.get("url")
-  htmlz=requests.get(html).text
+  htmlz=requests.get(html).content
   topred=htmlz
 
 
