@@ -66,7 +66,7 @@ def maint():
 
 
 
-  return render_template('preddonner.html',azz=topred)
+  return topred
 @app.route('/cy',methods=['POST','GET'])
 def cy():
     return render_template("cy.html")
